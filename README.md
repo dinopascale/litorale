@@ -33,3 +33,14 @@ watch
 ```bash
 npm run test:watch
 ```
+
+## Storybook
+
+```bash
+npm run storybook:serve
+```
+
+build
+```bash
+npm run storybook:build
+```
