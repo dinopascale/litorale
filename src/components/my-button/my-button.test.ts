@@ -1,6 +1,6 @@
 import {describe, beforeEach, it, expect} from 'vitest';
 
-import './my-element';
+import './my-button';
 
 describe('Button with increment', async () => {
   function getInsideButton(): HTMLElement | null | undefined {

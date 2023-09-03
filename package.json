@@ -7,28 +7,46 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
+    "manifest": "pnpm custom-elements-manifest analyze --exclude \"**.stories.ts\" --litelement",
     "format": "pnpm exec prettier src . --check",
     "format:fix": "pnpm exec prettier src . --write --cache",
     "lint": "pnpm eslint --ext .ts src/",
     "lint:fix": "pnpm eslint --ext .ts src/ --fix",
     "test": "vitest --dir src/",
-    "test:watch": "vitest --dir src/ --watch"
+    "test:watch": "vitest --dir src/ --watch",
+    "storybook:serve": "storybook dev -p 6006",
+    "storybook:build": "storybook build"
   },
   "dependencies": {
     "lit": "^2.7.6"
   },
   "devDependencies": {
+    "@custom-elements-manifest/analyzer": "^0.8.4",
+    "@storybook/addon-essentials": "^7.4.0",
+    "@storybook/addon-links": "^7.4.0",
+    "@storybook/blocks": "^7.4.0",
+    "@storybook/web-components": "^7.4.0",
+    "@storybook/web-components-vite": "^7.4.0",
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@typescript-eslint/parser": "^6.5.0",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-lit": "^1.9.1",
     "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-storybook": "^0.6.13",
     "eslint-plugin-wc": "^1.5.0",
     "jsdom": "^22.1.0",
     "prettier": "3.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.4.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vitest": "^0.34.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "plugin:storybook/recommended"
+    ]
   }
 }
