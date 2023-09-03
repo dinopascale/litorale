@@ -10,7 +10,9 @@
     "format": "pnpm exec prettier src . --check",
     "format:fix": "pnpm exec prettier src . --write --cache",
     "lint": "pnpm eslint --ext .ts src/",
-    "lint:fix": "pnpm eslint --ext .ts src/ --fix"
+    "lint:fix": "pnpm eslint --ext .ts src/ --fix",
+    "test": "vitest --dir src/",
+    "test:watch": "vitest --dir src/ --watch"
   },
   "dependencies": {
     "lit": "^2.7.6"
@@ -23,8 +25,10 @@
     "eslint-plugin-lit": "^1.9.1",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-wc": "^1.5.0",
+    "jsdom": "^22.1.0",
     "prettier": "3.0.3",
     "typescript": "^5.0.2",
-    "vite": "^4.4.5"
+    "vite": "^4.4.5",
+    "vitest": "^0.34.3"
   }
 }
