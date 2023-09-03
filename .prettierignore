@@ -1,0 +1,10 @@
+dist
+dist-ssr
+**/*.html
+.eslintrc.yml
+.prettierrc
+pnpm-lock.yaml
+tsconfig.json
+README.md
+package.json
+**/*.d.ts
