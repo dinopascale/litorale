@@ -21,3 +21,15 @@ npm run lint:fix
 ```bash
 npm run format:fix
 ```
+
+## Test
+
+```bash
+npm run test
+```
+
+watch
+
+```bash
+npm run test:watch
+```
